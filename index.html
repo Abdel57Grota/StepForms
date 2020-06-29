@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Multi Step Bootstrap Form with animations</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--PEN HEADER-->
+<header class="header">
+
+</header>
+<!--PEN CONTENT     -->
+<div class="content">
+  <!--content inner-->
+  <div class="content__inner">
+    <div class="container">
+      <!--content title-->
+      <h2 class="content__title content__title--m-sm">Vous souhaitez comparer des offres d'énergie*</h2>
+      <!--animations form-->
+      <form class="pick-animation my-4">
+        <div class="form-row">
+          <div class="col-5 m-auto">
+            <select class="pick-animation__select form-control">
+              
+              <option value="scaleOut">Pour Un seul Compteur</option>
+              <option value="slideHorz">Pour Plusieurs Compteur</option>
+           
+            </select>
+          </div>
+        </div>
+      </form>
+      <!--content title-->
+      
+    </div>
+    <div class="container overflow-hidden">
+      <!--multisteps-form-->
+      <div class="multisteps-form">
+        <!--progress bar-->
+        <div class="row">
+          <div class="col-12 col-lg-8 ml-auto mr-auto mb-4">
+            <div class="multisteps-form__progress">
+              <button class="multisteps-form__progress-btn js-active" type="button" title="User Info">quelle énergie ?</button>
+              <button class="multisteps-form__progress-btn" type="button" title="Address">les tarifs pour ?</button>
+              <button class="multisteps-form__progress-btn" type="button" title="Order Info">Type de compteur</button>
+              <button class="multisteps-form__progress-btn" type="button" title="Comments">Vos Coordonnées</button>
+            </div>
+          </div>
+        </div>
+        <!--form panels-->
+        <div class="row">
+          <div class="col-12 col-lg-8 m-auto">
+            <form class="multisteps-form__form">
+              <!--single form panel-->
+              <div class="multisteps-form__panel shadow p-4 rounded bg-white js-active" data-animation="scaleIn">
+                <h3 class="multisteps-form__title">Votre comparaison concerne quelle énergie ?*</h3>
+                
+				 <div class="form-row mt-4">
+				<select class="multisteps-form__select form-control">
+                        <option selected="selected">Electricité</option>
+                        <option>Gaz Naturel</option>
+						 <option>Electricité & Gaz Naturel </option>
+                      </select>
+				 </div>
+				  <div class="row">
+                    <div class="button-row d-flex mt-4 col-12">
+                     
+                      <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+                    </div>
+                  </div>
+              </div>
+			  
+			  
+			  
+			  <div class="multisteps-form__panel shadow p-4 rounded bg-white js-active" data-animation="scaleIn">
+                <h3 class="multisteps-form__title">Vous souhaitez comparer les tarifs pour*</h3>
+                
+				 <div class="form-row mt-4">
+				<select class="multisteps-form__select form-control">
+                   
+                        <option>Emménager vers un autre site</option>
+						 <option>Sur Votre Site Actuel</option>
+                      </select>
+				 </div>
+				  <div class="row">
+                    <div class="button-row d-flex mt-4 col-12">
+                      <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
+                      <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+                    </div>
+                  </div>
+              </div>
+			  
+			  
+			  
+			  
+			  
+			  
+			 
+			  
+			  
+              <!--single form panel-->
+            
+			  
+			  
+			  <div class="multisteps-form__panel shadow p-4 rounded bg-white js-active" data-animation="scaleIn">
+                <h3 class="multisteps-form__title">Type de compteur & Acheminement !*</h3>
+                
+				 <div class="form-row mt-4">
+				<select class="multisteps-form__select form-control">
+                   
+                        <option>Bleu - BT Inférieur à 36kVA</option>
+						 <option>Jaune - BT supérieur à 36kVA</option>
+						 <option> Vert - HTA</option>
+						
+                      </select>
+				 </div>
+				  <div class="row">
+                    <div class="button-row d-flex mt-4 col-12">
+                      <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
+                      <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+                    </div>
+                  </div>
+              </div>
+			  
+              <!--single form panel-->
+              
+			  <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                
+				<div class="form-row mt-4">
+                    <div class="col-12 col-sm-6">
+                      <input class="multisteps-form__input form-control" type="text" placeholder="First Name"/>
+                    </div>
+                    <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                      <input class="multisteps-form__input form-control" type="text" placeholder="Last Name"/>
+                    </div>
+                  </div>
+                  <div class="form-row mt-4">
+                    <div class="col-12 col-sm-6">
+                      <input class="multisteps-form__input form-control" type="text" placeholder="Votre Companie"/>
+                    </div>
+                    <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                      <input class="multisteps-form__input form-control" type="email" placeholder="Telephone"/>
+                    </div>
+                  </div>
+               
+                   <div class="row">
+                    <div class="button-row d-flex mt-4 col-12">
+                      <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
+                     
+                    </div>
+                  </div>
+				
+              </div>
+			  
+			  
+              <!--single form panel-->
+              <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                
+				
+				
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+  	  		<center>    <div class="header__btns btns"><a class="header__btn btn" href="" title="Check on Github" target="_blank">Validé</a></div></center>  
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
